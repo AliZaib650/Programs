@@ -25,7 +25,7 @@ int main()
         {
             smallest = marks[i];
         }
-        if(marks[i]>=smallest)
+        if(marks[i]>=largest)
         {
             largest = marks[i];
         }
