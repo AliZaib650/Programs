@@ -5,7 +5,7 @@ int main()
 {
     int marks[5];
     int total = 0;
-    double average;
+    double average = 0;
     int largest;
     int smallest;
     
@@ -30,6 +30,8 @@ int main()
             largest = marks[i];
         }
     }
+
+    average = total/5.0;
 
     cout << "Total   : " << total << endl;
     cout << "Average : " << average << endl;
