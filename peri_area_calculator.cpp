@@ -3,16 +3,20 @@ using namespace std;
 
 int main()
 {
-    int length;
-    int width;
-    int area;
-    int perimeter;
-    cout<< "Enter length of perimeter: ";
+    double length;
+    double width;
+    double area;
+    double perimeter;
+    cout<< "Enter length of rectangle: ";
     cin>> length;
     cout<< "Enter width of rectangle: ";
     cin>> width;
     area=length*width;
-    perimeter=2*(length+width);
+    perimeter=2.0*(length+width);
+
+    cout << "Area = " << area << endl;
+    cout << "Perimeter = " << perimeter << endl;
+    
     if(area>perimeter)
     {
         cout<< "Area is greater than perimeter";

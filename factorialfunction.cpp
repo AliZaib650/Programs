@@ -13,11 +13,18 @@ int factorial(int n)
 
 int main()
 {
-    cout<< factorial(0)<< endl;
-    cout<< factorial(1)<< endl;
-    cout<< factorial(2)<< endl;
-    cout<< factorial(4)<< endl;
-    cout<< factorial(6)<< endl;
+    int num;
+    cout << "Enter a non negative integer: ";
+    cin >> num;
+
+    while(num<0)
+    {
+        cout << "Warning!! Invalid input!" << endl;
+        cout << "Enter a non negative integer: ";
+        cin >> num;
+    }
+
+    cout << "Factorial of " << num << " is " << factorial(num) << endl;
 
 
    return 0;
